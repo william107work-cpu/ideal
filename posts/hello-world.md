@@ -1,15 +1,39 @@
-這是這個博客的第一篇文章。
+這個博客沒有使用任何框架，也不需要建置步驟：只有 HTML、CSS 和一點 JavaScript，放在 GitHub Pages 上直接託管。這篇記錄它的架構。
 
-倉庫的名字叫 **ideal**。原本想打的是 `idea`，多打了一個字母，意思就從「想法」變成了「理想」。想了一下，覺得這個錯誤比原本的名字更好，於是留了下來。
+## 專案結構
 
-## 為什麼要寫
+```text
+ideal/
+├── index.html        # 首頁：文章列表
+├── post.html         # 文章頁：依網址參數載入文章
+├── assets/
+│   ├── style.css
+│   └── main.js       # Markdown 轉換、封面產生、頁面邏輯
+└── posts/
+    ├── posts.json    # 文章索引
+    └── *.md          # 文章內容
+```
 
-想法如果不寫下來，很快就會散掉。寫作是把模糊的念頭整理成清楚句子的過程，也是檢驗自己是否真的理解一件事的方式。
+## 運作方式
 
-## 這裡會寫什麼
+1. 首頁用 `fetch` 讀取 `posts/posts.json`，依日期排序後產生文章卡片。
+2. 點進文章時，網址會帶上 `?id=文章id`，`post.html` 再去讀取對應的 `.md` 檔。
+3. `main.js` 內建一個迷你 Markdown 轉換器，支援標題、清單、引用和程式碼區塊。
 
-- 讀書筆記與摘錄
-- 學習過程中的整理與反思
-- 一些暫時還不成熟的想法
+```js
+const id = new URLSearchParams(location.search).get("id");
+const res = await fetch(`posts/${encodeURIComponent(id)}.md`);
+const html = renderMarkdown(await res.text());
+```
 
-不追求更新頻率，只求每一篇都認真寫完。
+## 文章封面
+
+每張卡片的封面圖不是圖片檔，而是用文章 `id` 算出雜湊值，再挑選配色與紋理（網格、點陣、斜線、電路），即時產生 SVG。同一篇文章的封面永遠一樣，也不需要另外準備圖片。
+
+## 為什麼不用框架
+
+- **零依賴**：沒有 `node_modules`，也不怕套件過期。
+- **部署簡單**：`git push` 之後，GitHub Pages 會自動上線。
+- **好維護**：整個網站只有幾個檔案，隨時都能看懂。
+
+> 之後如果文章變多，再考慮換成 Astro 或 Hugo 這類靜態網站產生器。

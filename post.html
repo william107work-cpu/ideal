@@ -3,30 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IDEAL</title>
+  <title>ideal · 技術博客</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+  <div id="progress" class="progress" aria-hidden="true"></div>
+  <div class="bg" aria-hidden="true"><div class="bg-glow"></div><div class="bg-grid"></div></div>
+
   <header class="site-header">
-    <a class="site-name" href="./" data-site-name>IDEAL</a>
-    <nav>
-      <a href="./#posts">文章</a>
-      <a href="./#about">關於</a>
-    </nav>
+    <div class="wrap header-inner">
+      <a class="brand" href="./"><span class="mark"></span><span data-site-name>ideal</span></a>
+      <nav>
+        <a href="./#posts">文章</a>
+        <a href="./#about">關於</a>
+        <a class="nav-btn" href="https://github.com/william107work-cpu" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="wrap narrow">
     <article id="article">
       <p class="note">載入中…</p>
     </article>
-    <p class="back"><a href="./#posts">← 返回文章列表</a></p>
+    <p class="back"><a class="btn ghost" href="./#posts">← 返回文章列表</a></p>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> <span data-author>William</span></p>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span data-author>William</span></span>
+      <span class="mono">built with HTML · CSS · JS — hosted on GitHub Pages</span>
+    </div>
   </footer>
 
   <script src="assets/main.js"></script>
