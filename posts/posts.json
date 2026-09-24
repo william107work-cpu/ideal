@@ -4,20 +4,23 @@
     "title": "零框架：這個博客是怎麼搭起來的",
     "date": "2026-09-24",
     "tags": ["Web", "GitHub Pages"],
-    "summary": "只用 HTML、CSS 和 JavaScript，沒有建置步驟，靠 GitHub Pages 自動部署。"
+    "summary": "只用 HTML、CSS 和 JavaScript，沒有建置步驟，靠 GitHub Pages 自動部署。",
+    "cover": "box"
   },
   {
     "id": "git-cheatsheet",
     "title": "Git 常用指令速查",
     "date": "2026-09-24",
     "tags": ["Git", "速查"],
-    "summary": "提交、分支、查看歷史與反悔操作，日常開發最常用的指令整理。"
+    "summary": "提交、分支、查看歷史與反悔操作，日常開發最常用的指令整理。",
+    "cover": "terrain"
   },
   {
     "id": "how-to-write",
     "title": "如何新增一篇文章",
     "date": "2026-09-23",
     "tags": ["指南"],
-    "summary": "新增 Markdown 檔、登記到 posts.json、推送，三步完成。"
+    "summary": "新增 Markdown 檔、登記到 posts.json、推送，三步完成。",
+    "cover": "octahedron"
   }
 ]

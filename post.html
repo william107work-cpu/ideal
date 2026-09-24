@@ -3,40 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ideal · 技術博客</title>
+  <title>ideal — 技術筆記</title>
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <div id="progress" class="progress" aria-hidden="true"></div>
-  <div class="bg" aria-hidden="true"><div class="bg-glow"></div><div class="bg-grid"></div></div>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="./"><span class="mark"></span><span data-site-name>ideal</span></a>
-      <nav>
+  <div class="frame">
+    <header class="site-header">
+      <a class="brand" href="./"><canvas data-scene="ramp" aria-hidden="true"></canvas><span data-site-name>ideal</span></a>
+      <nav class="nav">
         <a href="./#posts">文章</a>
         <a href="./#about">關於</a>
-        <a class="nav-btn" href="https://github.com/william107work-cpu" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/william107work-cpu" target="_blank" rel="noopener">GitHub ↗</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="wrap narrow">
-    <article id="article">
+    <main id="article">
       <p class="note">載入中…</p>
-    </article>
-    <p class="back"><a class="btn ghost" href="./#posts">← 返回文章列表</a></p>
-  </main>
+    </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <span>© <span id="year"></span> <span data-author>William</span></span>
-      <span class="mono">built with HTML · CSS · JS — hosted on GitHub Pages</span>
-    </div>
-  </footer>
+    <footer class="site-footer">
+      <span>© <span data-year></span> <span data-author>William</span></span>
+      <span>HTML · CSS · JS — 託管於 GitHub Pages</span>
+    </footer>
+  </div>
 
   <script src="assets/main.js"></script>
 </body>
