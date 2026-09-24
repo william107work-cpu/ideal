@@ -1,6 +1,6 @@
 # ideal
 
-一個像素風格的個人博客 👾
+一個簡潔的個人博客。
 
 ## 開啟網站（GitHub Pages）
 
@@ -18,10 +18,9 @@
 
 ## 個人化
 
-- 名字：`assets/main.js` 最上面的 `SITE.name`
-- 自我介紹、能力值：`index.html` 的「角色狀態」區塊
-- 顏色：`assets/style.css` 最上面的 `:root` 變數
-- 頭像：`assets/main.js` 裡的 `map`（16×16 像素圖，每個字母代表一種顏色）
+- 網站名稱、作者：`assets/main.js` 最上面的 `SITE`
+- 首頁簡介與「關於」：`index.html`
+- 顏色與字體：`assets/style.css` 最上面的 `:root` 變數（已支援深色模式）
 
 ## 本地預覽
 
@@ -30,7 +29,3 @@ python3 -m http.server
 ```
 
 然後打開 http://localhost:8000 。直接雙擊 `index.html` 會讀不到文章。
-
-## 彩蛋
-
-在首頁按 ↑↑↓↓←→←→BA 🌈

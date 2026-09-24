@@ -1,16 +1,20 @@
 [
   {
     "id": "hello-world",
-    "title": "Hello, World！冒險開始",
+    "title": "開始寫作",
     "date": "2026-09-24",
-    "tags": ["日常"],
-    "summary": "我的第一個 GitHub 倉庫，也是這個像素博客的第一篇文章。"
+    "tags": [
+      "隨筆"
+    ],
+    "summary": "關於這個博客，以及為什麼要寫。"
   },
   {
     "id": "how-to-write",
     "title": "怎麼新增一篇文章？",
     "date": "2026-09-23",
-    "tags": ["教學"],
-    "summary": "給未來的自己：三步驟寫出新文章。"
+    "tags": [
+      "說明"
+    ],
+    "summary": "新增文章的步驟備忘。"
   }
 ]

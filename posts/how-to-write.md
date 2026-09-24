@@ -30,6 +30,6 @@
 
 ## 3. Commit 並推送
 
-推送到 GitHub 之後，過一兩分鐘網站就會更新。
+推送到 GitHub 之後，約一兩分鐘網站就會更新。
 
 > 小技巧：直接在 GitHub 網頁上按 **Add file → Create new file** 也可以寫文章，不用開電腦終端機。

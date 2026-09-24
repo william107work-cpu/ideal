@@ -3,65 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IDEAL · 像素博客</title>
-  <meta name="description" content="一個像素風格的個人博客" />
+  <title>IDEAL</title>
+  <meta name="description" content="個人博客：記錄想法、閱讀與學習。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="crt" aria-hidden="true"></div>
-
-  <header class="topbar">
-    <a class="logo" href="./">IDEAL<span class="blink">_</span></a>
+  <header class="site-header">
+    <a class="site-name" href="./" data-site-name>IDEAL</a>
     <nav>
-      <a href="#about">角色</a>
-      <a href="#posts">任務日誌</a>
-      <a href="https://github.com/william107work-cpu/ideal" target="_blank" rel="noopener">GITHUB</a>
+      <a href="#posts">文章</a>
+      <a href="#about">關於</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <canvas id="avatar" width="16" height="16" aria-label="像素頭像"></canvas>
-      <p class="kicker">PLAYER 1</p>
-      <h1 id="typed" data-text="歡迎來到我的像素世界"></h1>
-      <p class="sub">記錄點子、學習與日常的小地方。</p>
-      <a class="btn" href="#posts">▶ PRESS START</a>
+    <section class="intro">
+      <p>記錄想法、閱讀與學習。</p>
     </section>
 
-    <section id="about" class="panel">
-      <h2 class="panel-title">◆ 角色狀態</h2>
-      <div class="about-grid">
-        <div>
-          <p class="line"><span class="label">NAME</span> <span id="player-name">PLAYER</span></p>
-          <p class="line"><span class="label">CLASS</span> 點子收集者</p>
-          <p class="line"><span class="label">LV</span> 01</p>
-          <p class="bio">嗨！這是我的第一個 GitHub 倉庫，也是我的個人博客。在這裡寫下想法、學到的東西，還有各種冒險。</p>
-        </div>
-        <div class="stats">
-          <div class="stat"><span>好奇心</span><div class="bar"><i style="--v:95%;--c:var(--pink)"></i></div></div>
-          <div class="stat"><span>程式力</span><div class="bar"><i style="--v:30%;--c:var(--cyan)"></i></div></div>
-          <div class="stat"><span>創造力</span><div class="bar"><i style="--v:75%;--c:var(--yellow)"></i></div></div>
-          <div class="stat"><span>咖啡量</span><div class="bar"><i style="--v:60%;--c:var(--green)"></i></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="posts" class="panel">
-      <h2 class="panel-title">◆ 任務日誌</h2>
-      <div class="tags" id="tag-filter"></div>
+    <section id="posts">
+      <h2 class="section-title">文章</h2>
       <ul class="post-list" id="post-list">
-        <li class="loading">LOADING<span class="blink">...</span></li>
+        <li class="note">載入中…</li>
       </ul>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">關於</h2>
+      <p>我是 <span data-author>William</span>。這裡是我的個人博客，用來整理思考、記下讀過的書和學到的東西。文章不定期更新。</p>
+      <p>聯絡：<a href="https://github.com/william107work-cpu" target="_blank" rel="noopener">GitHub</a></p>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> IDEAL · MADE WITH ♥ AND PIXELS</p>
-    <p class="hint">提示：試試 ↑↑↓↓←→←→BA</p>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> <span data-author>William</span></p>
   </footer>
 
   <script src="assets/main.js"></script>
