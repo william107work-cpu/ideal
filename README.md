@@ -30,3 +30,7 @@ python3 -m http.server
 ```
 
 然後打開 http://localhost:8000 。直接雙擊 `index.html` 會讀不到文章。
+
+## 雨夜便利店（3D 微縮場景）
+
+`rainy-konbini/index.html` 是一個三渲二風格的雨夜便利店街角模型，可以拖曳旋轉、滾輪或雙指縮放、右鍵或雙指拖移。開啟 GitHub Pages 後網址是 `https://william107work-cpu.github.io/ideal/rainy-konbini/`；本地預覽一樣用 `python3 -m http.server`，再打開 http://localhost:8000/rainy-konbini/ 。
