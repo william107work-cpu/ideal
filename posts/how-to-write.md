@@ -22,11 +22,14 @@
   "title": "今天的冒險",
   "date": "2026-10-01",
   "tags": ["日常"],
-  "summary": "一句話介紹這篇文章。"
+  "summary": "一句話介紹這篇文章。",
+  "cover": "terrain"
 }
 ```
 
 `id` 要和檔名一樣（不用加 `.md`）。
+
+`cover` 是封面圖案，可以不填。可選值：`sphere`（球）、`torus`（環面）、`box`（立方體）、`octahedron`（八面體）、`terrain`（地形）。不填時會依 `id` 自動挑選。
 
 ## 3. Commit 並推送
 

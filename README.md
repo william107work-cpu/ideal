@@ -19,9 +19,9 @@
 ## 個人化
 
 - 網站名稱、作者：`assets/main.js` 最上面的 `SITE`
-- 首屏標語、終端機內容、「關於」：`index.html`
-- 配色：`assets/style.css` 最上面的 `:root` 變數
-- 文章封面會依文章 `id` 自動產生，不需要準備圖片
+- 首屏標語、「關於」：`index.html`
+- 顏色：`assets/style.css` 最上面的 `:root` 變數（淺色／深色各一組）
+- 文章封面：`posts.json` 裡每篇文章的 `cover` 欄位（`sphere`、`torus`、`box`、`octahedron`、`terrain`），不填會自動挑選
 
 ## 本地預覽
 
