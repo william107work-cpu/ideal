@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDEAL · 文章</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="crt" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="logo" href="./">IDEAL<span class="blink">_</span></a>
+    <nav>
+      <a href="./#about">角色</a>
+      <a href="./#posts">任務日誌</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="panel article" id="article">
+      <p class="loading">LOADING<span class="blink">...</span></p>
+    </article>
+    <p class="back"><a class="btn" href="./#posts">◀ 返回日誌</a></p>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> IDEAL · MADE WITH ♥ AND PIXELS</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
