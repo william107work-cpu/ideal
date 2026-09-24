@@ -1,20 +1,23 @@
 [
   {
     "id": "hello-world",
-    "title": "開始寫作",
+    "title": "零框架：這個博客是怎麼搭起來的",
     "date": "2026-09-24",
-    "tags": [
-      "隨筆"
-    ],
-    "summary": "關於這個博客，以及為什麼要寫。"
+    "tags": ["Web", "GitHub Pages"],
+    "summary": "只用 HTML、CSS 和 JavaScript，沒有建置步驟，靠 GitHub Pages 自動部署。"
+  },
+  {
+    "id": "git-cheatsheet",
+    "title": "Git 常用指令速查",
+    "date": "2026-09-24",
+    "tags": ["Git", "速查"],
+    "summary": "提交、分支、查看歷史與反悔操作，日常開發最常用的指令整理。"
   },
   {
     "id": "how-to-write",
-    "title": "怎麼新增一篇文章？",
+    "title": "如何新增一篇文章",
     "date": "2026-09-23",
-    "tags": [
-      "說明"
-    ],
-    "summary": "新增文章的步驟備忘。"
+    "tags": ["指南"],
+    "summary": "新增 Markdown 檔、登記到 posts.json、推送，三步完成。"
   }
 ]

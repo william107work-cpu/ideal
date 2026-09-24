@@ -1,6 +1,6 @@
 # ideal
 
-一個簡潔的個人博客。
+一個零框架的技術博客，託管在 GitHub Pages。
 
 ## 開啟網站（GitHub Pages）
 
@@ -19,8 +19,9 @@
 ## 個人化
 
 - 網站名稱、作者：`assets/main.js` 最上面的 `SITE`
-- 首頁簡介與「關於」：`index.html`
-- 顏色與字體：`assets/style.css` 最上面的 `:root` 變數（已支援深色模式）
+- 首屏標語、終端機內容、「關於」：`index.html`
+- 配色：`assets/style.css` 最上面的 `:root` 變數
+- 文章封面會依文章 `id` 自動產生，不需要準備圖片
 
 ## 本地預覽
 

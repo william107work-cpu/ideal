@@ -3,43 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IDEAL</title>
-  <meta name="description" content="個人博客：記錄想法、閱讀與學習。" />
+  <title>ideal · 技術博客</title>
+  <meta name="description" content="關於軟體開發、工具與實驗的技術筆記。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+  <div class="bg" aria-hidden="true"><div class="bg-glow"></div><div class="bg-grid"></div></div>
+
   <header class="site-header">
-    <a class="site-name" href="./" data-site-name>IDEAL</a>
-    <nav>
-      <a href="#posts">文章</a>
-      <a href="#about">關於</a>
-    </nav>
+    <div class="wrap header-inner">
+      <a class="brand" href="./"><span class="mark"></span><span data-site-name>ideal</span></a>
+      <nav>
+        <a href="#posts">文章</a>
+        <a href="#about">關於</a>
+        <a class="nav-btn" href="https://github.com/william107work-cpu" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <p>記錄想法、閱讀與學習。</p>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-text">
+        <a class="pill" id="latest" href="#posts" hidden><b>NEW</b><span></span> →</a>
+        <h1>記錄技術，<br /><span class="grad">拆解每一個想法。</span></h1>
+        <p class="lead">關於軟體開發、工具與實驗的技術筆記。寫下踩過的坑、讀過的原始碼，以及值得分享的解法。</p>
+        <div class="actions">
+          <a class="btn primary" href="#posts">閱讀文章 →</a>
+          <a class="btn ghost" href="https://github.com/william107work-cpu/ideal" target="_blank" rel="noopener">查看原始碼</a>
+        </div>
+        <ul class="stack">
+          <li>Web</li><li>JavaScript</li><li>Git</li><li>AI</li><li>DevTools</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="floor"></div>
+        <div class="terminal">
+          <div class="term-bar"><i></i><i></i><i></i><span>~/ideal — zsh</span></div>
+          <pre><span class="c-p">$</span> git commit -m <span class="c-g">"feat: 新文章"</span>
+[main <span class="c-y">a1b2c3d</span>] feat: 新文章
+ 1 file changed, 42 insertions(+)
+<span class="c-p">$</span> git push origin main
+<span class="c-g">✓</span> deployed to GitHub Pages
+<span class="c-p">$</span> <span class="cursor"></span></pre>
+        </div>
+      </div>
     </section>
 
-    <section id="posts">
-      <h2 class="section-title">文章</h2>
-      <ul class="post-list" id="post-list">
-        <li class="note">載入中…</li>
-      </ul>
+    <section id="posts" class="section">
+      <div class="section-head">
+        <p class="eyebrow">// posts</p>
+        <h2>最新文章</h2>
+      </div>
+      <div class="grid" id="post-list">
+        <p class="note">載入中…</p>
+      </div>
     </section>
 
-    <section id="about">
-      <h2 class="section-title">關於</h2>
-      <p>我是 <span data-author>William</span>。這裡是我的個人博客，用來整理思考、記下讀過的書和學到的東西。文章不定期更新。</p>
-      <p>聯絡：<a href="https://github.com/william107work-cpu" target="_blank" rel="noopener">GitHub</a></p>
+    <section id="about" class="section">
+      <div class="about">
+        <div class="about-cover" aria-hidden="true"></div>
+        <div class="about-body">
+          <p class="eyebrow">$ whoami</p>
+          <h2><span data-author>William</span></h2>
+          <p>對技術保持好奇的開發者。這個博客用來整理學習筆記、專案紀錄和工具心得，讓知識有處可查，也希望對讀到的人有幫助。</p>
+          <a class="btn ghost" href="https://github.com/william107work-cpu" target="_blank" rel="noopener">github.com/william107work-cpu</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> <span data-author>William</span></p>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span data-author>William</span></span>
+      <span class="mono">built with HTML · CSS · JS — hosted on GitHub Pages</span>
+    </div>
   </footer>
 
   <script src="assets/main.js"></script>
